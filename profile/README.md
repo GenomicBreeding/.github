@@ -1,4 +1,4 @@
-# GenomicBreeding Organisation
+# GenomicBreeding
 
 🧬🌱 Genomic breeding pipeline in Julia ∴ 
 
