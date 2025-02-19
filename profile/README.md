@@ -5,10 +5,10 @@
 🧙 Functionalities:
 - [X] genomic prediction assessment (replicated k-fold cross-validation)
 - [X] genomic prediction *per se* (extraction of allele effects)
-- [ ] genome-wide association study
-- [ ] mating/crossing designs
-- [ ] breeding simulations
-- [ ] high-dimensional selection indices
+- [ ] genome-wide association study (**under development**)
+- [ ] mating/crossing designs (**planned**)
+- [ ] breeding simulations (**planned**)
+- [ ] high-dimensional selection indices (**planned**)
 - [ ] others...
 
 🌱 Limitations:
