@@ -2,6 +2,14 @@
 
 🧬🌱 Genomic breeding pipeline in Julia ∴ 
 
+Status:
+- [![](https://github.com/GenomicBreeding/GenomicBreeding.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/GenomicBreeding/GenomicBreeding.jl/actions) GenomicBreeding.jl
+- [![](https://github.com/GenomicBreeding/GBCore.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/GenomicBreeding/GBCore.jl/actions) GBCore.jl
+- [![](https://github.com/GenomicBreeding/GBIO.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/GenomicBreeding/GBIO.jl/actions) GBIO.jl
+- [![](https://github.com/GenomicBreeding/GBModels.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/GenomicBreeding/GBModels.jl/actions) GBModels.jl
+- [![](https://github.com/GenomicBreeding/GBPlots.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/GenomicBreeding/GBPlots.jl/actions) GBPlots.jl
+- [![](https://github.com/GenomicBreeding/GBPlotsInteractive.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/GenomicBreeding/GBPlotsInteractive.jl/actions) GBPlotsInteractive.jl
+
 🧙 Functionalities:
 - [X] genomic prediction assessment (replicated k-fold cross-validation)
 - [X] genomic prediction *per se* (extraction of allele effects)
