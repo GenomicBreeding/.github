@@ -12,7 +12,7 @@
 - [ ] others...
 
 🌱 Limitations:
-- currently designed for crop breeding in mind
+- currently being designed for plant/crop breeding
 - currently under heavy development without any stable release at the moment ∴ see [docs|dev] instead of [docs|stable]
 
 <!--
