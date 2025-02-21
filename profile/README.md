@@ -2,13 +2,14 @@
 
 🧬🌱 Genomic breeding pipeline in Julia ∴ 
 
-Status:
-- [![](https://github.com/GenomicBreeding/GenomicBreeding.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/GenomicBreeding/GenomicBreeding.jl/actions) GenomicBreeding.jl
-- [![](https://github.com/GenomicBreeding/GBCore.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/GenomicBreeding/GBCore.jl/actions) GBCore.jl
-- [![](https://github.com/GenomicBreeding/GBIO.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/GenomicBreeding/GBIO.jl/actions) GBIO.jl
-- [![](https://github.com/GenomicBreeding/GBModels.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/GenomicBreeding/GBModels.jl/actions) GBModels.jl
-- [![](https://github.com/GenomicBreeding/GBPlots.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/GenomicBreeding/GBPlots.jl/actions) GBPlots.jl
-- [![](https://github.com/GenomicBreeding/GBPlotsInteractive.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/GenomicBreeding/GBPlotsInteractive.jl/actions) GBPlotsInteractive.jl
+|Library|Status|Docs|
+|:-----|:-----|:-----|
+| [GenomicBreeding.jl](https://github.com/GenomicBreeding/GenomicBreeding.jl) | [![](https://github.com/GenomicBreeding/GenomicBreeding.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/GenomicBreeding/GenomicBreeding.jl/actions) | [![](https://img.shields.io/badge/docs-dev-blue.svg)](https://GenomicBreeding.github.io/GenomicBreeding.jl/dev/) |
+| [GBCore.jl](https://github.com/GenomicBreeding/GBCore.jl) | [![](https://github.com/GenomicBreeding/GBCore.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/GenomicBreeding/GBCore.jl/actions) | [![](https://img.shields.io/badge/docs-dev-blue.svg)](https://GenomicBreeding.github.io/GBCore.jl/dev/) |
+| [GBIO.jl](https://github.com/GenomicBreeding/GBIO.jl) | [![](https://github.com/GenomicBreeding/GBIO.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/GenomicBreeding/GBIO.jl/actions) | [![](https://img.shields.io/badge/docs-dev-blue.svg)](https://GenomicBreeding.github.io/GBIO.jl/dev/) |
+| [GBModels.jl](https://github.com/GenomicBreeding/GBModels.jl) | [![](https://github.com/GenomicBreeding/GBModels.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/GenomicBreeding/GBModels.jl/actions) | [![](https://img.shields.io/badge/docs-dev-blue.svg)](https://GenomicBreeding.github.io/GBModels.jl/dev/) |
+| [GBPlots.jl](https://github.com/GenomicBreeding/GBPlots.jl) | [![](https://github.com/GenomicBreeding/GBPlots.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/GenomicBreeding/GBPlots.jl/actions) | [![](https://img.shields.io/badge/docs-dev-blue.svg)](https://GenomicBreeding.github.io/GBPlots.jl/dev/) |
+| [GBPlotsInteractive.jl](https://github.com/GenomicBreeding/GBPlotsInteractive.jl) | [![](https://github.com/GenomicBreeding/GBPlotsInteractive.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/GenomicBreeding/GBPlotsInteractive.jl/actions) | [![](https://img.shields.io/badge/docs-dev-blue.svg)](https://GenomicBreeding.github.io/GBPlotsInteractive.jl/dev/) |
 
 🧙 Functionalities:
 - [X] genomic prediction assessment (repeated k-fold cross-validation)
