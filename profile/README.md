@@ -11,7 +11,7 @@ Status:
 - [![](https://github.com/GenomicBreeding/GBPlotsInteractive.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/GenomicBreeding/GBPlotsInteractive.jl/actions) GBPlotsInteractive.jl
 
 🧙 Functionalities:
-- [X] genomic prediction assessment (replicated k-fold cross-validation)
+- [X] genomic prediction assessment (repeated k-fold cross-validation)
 - [X] genomic prediction *per se* (extraction of allele effects)
 - [ ] genome-wide association study (**under development**)
 - [ ] mating/crossing designs (**planned**)
