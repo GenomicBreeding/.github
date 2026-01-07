@@ -15,7 +15,8 @@ This organisation develops a genomic breeding pipeline in Julia covering data I/
 | [GenomicBreedingApp.jl](https://github.com/GenomicBreeding/GenomicBreedingApp.jl) | User-facing application layer that surfaces workflows and visualisations |  |  |
 | [GenomicBreedingInteractivePlots.jl](https://github.com/GenomicBreeding/GenomicBreedingInteractivePlots.jl) | Interactive visualisations for dynamic exploration of results |  |  |
 
-## Mermaid: Architecture Map
+## Architecture Map
+
 ```mermaid
 flowchart TB
     Workflow[GenomicBreeding.jl] --> Core[GenomicBreedingCore.jl]
@@ -31,7 +32,7 @@ flowchart TB
     DB --> App[GenomicBreedingApp.jl]
 ```
 
-## Milestone Plan (Draft)
+## Milestone Plan
 
 ### Milestone 1: Stabilise Core & Modelling
 - **Core:** finalise data structures for genotypes/phenotypes; define common interfaces.
