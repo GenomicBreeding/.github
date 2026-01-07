@@ -2,7 +2,7 @@
 
 This organisation develops a genomic breeding pipeline in Julia covering data I/O, modelling, visualisation, and application layers. Current capabilities include genomic prediction assessment (e.g., repeated k-fold CV) and allele effect extraction; GWAS, mating/crossing designs, breeding simulations, and high-dimensional selection indices are under development.
 
-## Repositories and Roles
+## Repositories
 
 |Library|Description|Status|Docs|
 |:-----|:-----|:-----|:-----|
