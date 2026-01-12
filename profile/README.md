@@ -23,13 +23,14 @@ flowchart TB
     Workflow --> IO[GenomicBreedingIO.jl]
     Workflow --> Models[GenomicBreedingModels.jl]
     Workflow --> Plots[GenomicBreedingPlots.jl]
-    Core --> IO
-    Core --> Models
-    Core --> Plots
-    Core --> DB[GenomicBreedingDB.jl]
-    IO --> DB
-    Plots --> IPlots[GenomicBreedingInteractivePlots.jl]
-    DB --> App[GenomicBreedingApp.jl]
+    IO --> Core
+    Models --> Core
+    Plots --> Core
+    DB[GenomicBreedingDB.jl] --> Core
+    DB --> IO
+    IPlots[GenomicBreedingInteractivePlots.jl] --> Plots
+    App[GenomicBreedingApp.jl] --> Workflow
+    App --> IPlots
 ```
 
 ## Milestone Plan
