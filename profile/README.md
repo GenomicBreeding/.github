@@ -26,10 +26,9 @@ flowchart TB
     IO --> Core
     Models --> Core
     Plots --> Core
-    DB[GenomicBreedingDB.jl] --> Core
-    DB --> IO
-    IPlots[GenomicBreedingInteractivePlots.jl] --> Plots
-    App[GenomicBreedingApp.jl] --> Workflow
+    DB[GenomicBreedingDB.jl] --> Workflow
+    IPlots[GenomicBreedingInteractivePlots.jl] --> Workflow
+    App[GenomicBreedingApp.jl] --> DB
     App --> IPlots
 ```
 
