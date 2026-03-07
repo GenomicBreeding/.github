@@ -18,6 +18,8 @@ This organisation develops a genomic breeding pipeline in Julia covering data st
 
 ## Architecture Map
 
+- [ ] Add `GenomicBreedingCrossing.jl` once we have a fully drafted/minimum working module built.
+
 ```mermaid
 flowchart TB
     Workflow[GenomicBreeding.jl] --> Core[GenomicBreedingCore.jl]
