@@ -26,9 +26,12 @@ flowchart TB
     Workflow --> IO[GenomicBreedingIO.jl]
     Workflow --> Models[GenomicBreedingModels.jl]
     Workflow --> Plots[GenomicBreedingPlots.jl]
+    Workflow --> Cross[GenomicBreedingCrossing.jl]
     IO --> Core
     Models --> Core
     Plots --> Core
+    Cross --> Core
+    Cross --> Models
     DB[GenomicBreedingDB.jl] --> Workflow
     IPlots[GenomicBreedingInteractivePlots.jl] --> Workflow
     App[GenomicBreedingApp.jl] --> DB
