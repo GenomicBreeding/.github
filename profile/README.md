@@ -41,29 +41,29 @@ flowchart TB
 ## Milestone Plan
 
 ### Milestone 1: Stabilise Core & Modelling
-- **Core:** finalise data structures for genotypes/phenotypes; define common interfaces.
-- **Models:** complete repeated k-fold CV, allele effect extraction; add benchmarking harness.
-- **IO:** standardise loaders (VCF, CSV/TSV, JLD2) and schema validation.
-- **Plots:** deliver model evaluation plots (CV metrics, residuals, feature importance).
-- **.github:** CI for Julia versions, unit tests, and documentation builds.
+- **Core**: data structures for genotypes/phenotypes are well-drafted; finalise common interfaces.
+- **Models**: repeated k-fold CV and allele effect extraction are complete; plan migration from R::BGLR to Julia using Turing.jl (pending faster estimations for large parameter sets); add benchmarking harness.
+- **IO**: loaders (VCF, CSV/TSV, JLD2) and schema validation are well-drafted.
+- **Plots**: deliver model evaluation plots (CV metrics, residuals, feature importance); improve overall plotting capabilities.
+- **.github**: CI for Julia versions, unit tests, and documentation builds.
 
 ### Milestone 2: GWAS Foundations
-- **Models:** implement GWAS pipeline (linear/mixed models), p-value correction, Manhattan/Q-Q plots.
-- **IO/DB:** support GWAS input tables and result storage; indexing for fast retrieval.
-- **InteractivePlots:** interactive Manhattan/QQ with hover details and region zoom.
-- **Workflow:** end-to-end GWAS run configuration and reproducible reports.
+- **Models**: implement GWAS pipeline (linear/mixed models), add more GWAS models, p-value correction, Manhattan/Q-Q plots; improve tests.
+- **IO/DB**: support GWAS input tables and result storage; indexing for fast retrieval; revise DB to use SearchLight.jl instead of raw SQL.
+- **App**: interactive Manhattan/QQ with hover details and region zoom (migrated from InteractivePlots).
+- **Workflow**: end-to-end GWAS run configuration and reproducible reports.
 
 ### Milestone 3: Mating/Crossing Designs
-- **Models/Core:** utilities for mating plans (e.g., optimal contribution, diversity constraints).
-- **App:** UI for proposing/validating crossing designs; export to breeding operations.
-- **Plots:** pedigree and cross outcome visualisation.
+- **Crossing**: utilities for mating plans (e.g., optimal contribution, diversity constraints); fully draft Crossing module.
+- **App**: UI for proposing/validating crossing designs; export to breeding operations; refactor App for better integration.
+- **Plots**: pedigree and cross outcome visualisation; improve plotting functions.
 
 ### Milestone 4: Breeding Simulations
-- **Models:** stochastic/forward simulations with selection strategies; track genetic gain and inbreeding.
-- **DB:** store simulation scenarios and outcomes; comparison dashboards.
-- **InteractivePlots:** time-series and scenario comparison widgets.
+- **Crossing**: stochastic/forward simulations with selection strategies; track genetic gain and inbreeding.
+- **DB**: store simulation scenarios and outcomes; comparison dashboards; use SearchLight.jl.
+- **App**: time-series and scenario comparison widgets (migrated from InteractivePlots); refactor App.
 
 ### Milestone 5: High-dimensional Selection Indices
-- **Models:** multi-trait indices (economic weights, sparsity/regularisation); sensitivity analyses.
-- **Workflow/App:** templated runs and interactive tuning.
+- **Models**: multi-trait indices (economic weights, sparsity/regularisation); sensitivity analyses.
+- **Workflow/App**: templated runs and interactive tuning; refactor App for comprehensive functionality.
 
