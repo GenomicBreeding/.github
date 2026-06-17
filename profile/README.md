@@ -2,6 +2,8 @@
 
 This organisation develops a genomic breeding pipeline in Julia covering data structure, I/O, modelling, visualisation, and application layers. Current capabilities include genomic prediction assessment (e.g. repeated k-fold CV) and allele effect extraction. GWAS, mating/crossing designs, breeding simulations, and high-dimensional selection indices are under development.
 
+Note: To prevent excessive pre-compilations across heterogenous systems common in HPCs, please append this line into your `~/.bashrc` (or equivalent shell init commands file): `export JULIA_CPU_TARGET="generic;skylake-avx512,clone_all;znver2,clone_all"`.
+
 ## Repositories
 
 |Library|Description|Status|Docs|
