@@ -22,18 +22,22 @@ Note: To prevent excessive pre-compilations across heterogenous systems common i
 
 ```mermaid
 flowchart TB
-    Core[GenomicBreedingCore.jl] --> Workflow[GenomicBreeding.jl]
+    Core[GenomicBreedingCore.jl] --> DB[GenomicBreedingDB.jl]
+    Core --> Workflow[GenomicBreeding.jl]
     IO[GenomicBreedingIO.jl] --> Workflow
     Models[GenomicBreedingModels.jl] --> Workflow
     Plots[GenomicBreedingPlots.jl] --> Workflow
     Cross[GenomicBreedingCrossing.jl] --> Workflow
+    
     Core --> IO
     Core --> Models
     Core --> Cross
     Core --> Plots
+    
     Models --> Cross
-    Workflow --> DB[GenomicBreedingDB.jl]
-    Workflow --> IPlots[GenomicBreedingInteractivePlots.jl]
+    Workflow --> DB
+    Core --> IPlots[GenomicBreedingInteractivePlots.jl]
+    Workflow --> IPlots
     DB --> App[GenomicBreedingApp.jl]
     IPlots --> App
 ```
