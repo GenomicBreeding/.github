@@ -36,11 +36,10 @@ flowchart TB
     Core --> Plots
     
     Models --> Cross
-    Workflow --> DB
     Core --> IPlots[GenomicBreedingInteractivePlots.jl]
-    Workflow --> IPlots
     DB --> App[GenomicBreedingApp.jl]
     IPlots --> App
+    Workflow --> App
 ```
 
 ## Milestone Plan
