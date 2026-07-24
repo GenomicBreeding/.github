@@ -23,13 +23,14 @@ Note: To prevent excessive pre-compilations across heterogenous systems common i
 ```mermaid
 flowchart TB
     Core[GenomicBreedingCore.jl] --> DB[GenomicBreedingDB.jl]
+    Core --> IO[GenomicBreedingIO.jl]
     Core --> Workflow[GenomicBreeding.jl]
-    IO[GenomicBreedingIO.jl] --> Workflow
+    IO --> DB
+    IO --> Workflow
     Models[GenomicBreedingModels.jl] --> Workflow
     Plots[GenomicBreedingPlots.jl] --> Workflow
     Cross[GenomicBreedingCrossing.jl] --> Workflow
     
-    Core --> IO
     Core --> Models
     Core --> Cross
     Core --> Plots
