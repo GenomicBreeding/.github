@@ -22,20 +22,20 @@ Note: To prevent excessive pre-compilations across heterogenous systems common i
 
 ```mermaid
 flowchart TB
-    Workflow[GenomicBreeding.jl] --> Core[GenomicBreedingCore.jl]
-    Workflow --> IO[GenomicBreedingIO.jl]
-    Workflow --> Models[GenomicBreedingModels.jl]
-    Workflow --> Plots[GenomicBreedingPlots.jl]
-    Workflow --> Cross[GenomicBreedingCrossing.jl]
-    IO --> Core
-    Models --> Core
-    Plots --> Core
-    Cross --> Core
-    Cross --> Models
-    DB[GenomicBreedingDB.jl] --> Workflow
-    IPlots[GenomicBreedingInteractivePlots.jl] --> Workflow
-    App[GenomicBreedingApp.jl] --> DB
-    App --> IPlots
+    Core[GenomicBreedingCore.jl] --> Workflow[GenomicBreeding.jl]
+    IO[GenomicBreedingIO.jl] --> Workflow
+    Models[GenomicBreedingModels.jl] --> Workflow
+    Plots[GenomicBreedingPlots.jl] --> Workflow
+    Cross[GenomicBreedingCrossing.jl] --> Workflow
+    Core --> IO
+    Core --> Models
+    Core --> Cross
+    Core --> Plots
+    Models --> Cross
+    Workflow --> DB[GenomicBreedingDB.jl]
+    Workflow --> IPlots[GenomicBreedingInteractivePlots.jl]
+    DB --> App[GenomicBreedingApp.jl]
+    IPlots --> App
 ```
 
 ## Milestone Plan
